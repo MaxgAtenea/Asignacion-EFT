@@ -1,0 +1,4 @@
+# Ignorar carpetas específicas
+Asignacion de cupos/
+Export/
+__pycache__/
