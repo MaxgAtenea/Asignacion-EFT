@@ -2,3 +2,4 @@
 Asignacion de cupos/
 Export/
 __pycache__/
+git rm --cached .gitignore
