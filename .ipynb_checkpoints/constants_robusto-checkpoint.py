@@ -1,18 +1,18 @@
-recursos_por_ruta = {
+RECURSOS_POR_RUTA = {
     "antiguos":  1_320_000_000,
     "nuevos": 990_000_000,
     "cerrados": 990_000_000
 }
 
 # Columna que especifica el valor del programa indexado
-columna_valor_programa = "VALOR TOTAL DEL PROGRAMA INDEXADO"
+COLUMNA_VALOR_PROGRAMA = "VALOR TOTAL DEL PROGRAMA INDEXADO"
 # Columna que especifica el numero de cupos maximos aprobados 
 columna_cupos_maximos = "Número máximo de cupos por grupos"
 
 MINIMO_CUPOS_CERRADOS_SEDE = 50
 
 # Columnas para quedarse con 
-columnas_programas_eft_oferta = [
+COLUMNAS_PROGRAMAS_EFT_OFERTA = [
     'CODIGO_PROGRAMA',
     'cod_CNO',
     'cod_CNO3d',
@@ -22,7 +22,7 @@ columnas_programas_eft_oferta = [
     'ISOEFT_4d'
 ]
 
-nombre_columnas_mapping = {
+NOMBRE_COLUMNAS_MAPPING = {
     'CÓDIGO DE INSTITUCIÓN ': 'CODIGO_INSTITUCION',
     'CÓDIGO SIET DEL PROGRAMA A OFERTAR (SOLO APLICA PARA PROGRAMAS ANTIGUOS)': 'CODIGO_PROGRAMA',
     'NOMBRE PROGRAMA SEGÚN REGISTRO SECRETARÍA DE EDUCACIÓN' : 'nombre_programa',
@@ -33,12 +33,12 @@ nombre_columnas_mapping = {
 }
 
 
-tipo_columnas_mapping = {
+TIPO_COLUMNAS_MAPPING = {
     "CODIGO_PROGRAMA" : 'Int64' # la llave para unir Programas_EFT y Programas_EFT_Oferta
 }
 
 #diccionario con los cno e IPO de los programas nuevos
-programa_info = {
+PROGRAMA_INFO = {
     "TÉCNICO LABORAL COMO ASESOR COMERCIAL Y DE SERVICIOS": (6311, 0.524),
     "TÉCNICO LABORAL POR COMPETENCIAS ACOMPAÑANTES DOMICILIARIOS": (6371, 0.492),
     "Técnico Laboral por competencias en Codificación de Software": (2281, 0.665),
@@ -53,3 +53,25 @@ programa_info = {
     "TÉCNICO LABORAL EN AUXILIAR DE SISTEMAS INFORMÁTICOS": (8325, 0.502)
 }
 
+
+COLUMNAS_EXPORTAR = [
+    'Ruta habilitada',
+    'nombre_institucion',
+    'cod_CNO',
+    'Ocupacion',
+    'nombre_programa',
+    "CODIGO_PROGRAMA",
+    'IPO',
+    'ISOEFT_4d',
+    'Puntaje (nuevos y cerrados)',
+    'Meta de vinculación',
+    COLUMNA_VALOR_PROGRAMA,
+    "numero_cupos_ofertar",
+    'duracion_horas_programa',
+    'total_dispersado',
+    'total_cupos_habilitados',
+    "Número máximo de cupos por grupos",
+]
+
+
+    
